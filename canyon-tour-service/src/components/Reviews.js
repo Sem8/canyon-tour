@@ -35,8 +35,6 @@ const Reviews = () => {
           ...doc.data(),
         }));
 
-        console.log('allReviewsFromFirebase: ', allReviewsFromFirebase);
-
         setAllReviews(allReviewsFromFirebase);
         setTotalReviewLength(allReviewsFromFirebase.length)
         setTopReview(allReviewsFromFirebase[0]['rating']);
@@ -44,8 +42,6 @@ const Reviews = () => {
 
     return () => unsubscribe();
   }, []);
-
-  console.log("allReviews: ", allReviews);
 
   return (
     <>

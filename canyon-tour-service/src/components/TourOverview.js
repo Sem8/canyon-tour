@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 
 import firebase from "../firebaseConfig";
 
@@ -6,20 +6,16 @@ import Reviews from "./Reviews";
 import Bookmark from "./Bookmark";
 import TourInfo from "./TourInfo";
 import BookTourForm from "./BookTourForm";
-import EditImage from "./EditImage";
+
 
 import "../styles/TourOverview.css";
-
-import { Typography, TextField, Button, Input } from "@material-ui/core";
 import CameraAltRoundedIcon from "@material-ui/icons/CameraAltRounded";
 
 import antelopeCanyon from "../images/antelopeCanyon.jpg";
 
-const TourOverview = (props) => {
+const TourOverview = () => {
   const [image, setImage] = useState(antelopeCanyon);
   const [file, setFile] = useState(null);
-
-  const photoInp = React.createRef();
 
   const handleChange = (e) => {
     // e.persist();
@@ -38,7 +34,7 @@ const TourOverview = (props) => {
     uploadTask.on(
       "state_changed",
       (snapshot) => {
-        console.log("snapshot");
+        // console.log("snapshot");
       },
       (error) => {
         console.log(error);
@@ -79,7 +75,6 @@ const TourOverview = (props) => {
         <Reviews />
       </div>
       <Bookmark />
-      {/* <EditImage /> */}
       <TourInfo />
       <BookTourForm />
     </>

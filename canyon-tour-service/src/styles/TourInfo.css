@@ -1,0 +1,26 @@
+.tour-info-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+    padding: 2%;
+}
+
+.tour-info-price {
+    display: flex;
+    width: 50%;
+}
+
+.tour-info-duration {
+    display: flex;
+    width: 50%;
+}
+
+.tour-info-description {
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.tour-info-description h6 {
+    font-weight: bold;
+}
