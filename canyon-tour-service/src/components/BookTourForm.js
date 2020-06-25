@@ -93,7 +93,7 @@ const BookTourForm = () => {
               Cancel
             </Button>
             <Button onClick={handleClose} color="primary">
-              BOOK!
+              Book
             </Button>
           </DialogActions>
         </Dialog>

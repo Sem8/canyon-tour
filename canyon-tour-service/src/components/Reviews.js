@@ -11,8 +11,9 @@ const useStyles = makeStyles((theme) => ({
   root: {
     color: "yellow",
     fontSize: 40,
-    paddingRight: "10%",
+    paddingRight: "30%",
     marginTop: "20%",
+    // marginRight: '5%'
   },
 }));
 

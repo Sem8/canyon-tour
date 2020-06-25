@@ -1,14 +1,9 @@
 import React from "react";
 
-
 import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
 
-
-
 const TourInfo = () => {
-
-
   return (
     <>
       <div className="tour-info-wrapper">

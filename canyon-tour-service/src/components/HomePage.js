@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import firebase from "../firebaseConfig";
-
 import Reviews from "./Reviews";
 import Bookmark from "./Bookmark";
 import TourInfo from "./TourInfo";
