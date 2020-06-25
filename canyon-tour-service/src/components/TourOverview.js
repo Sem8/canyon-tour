@@ -2,6 +2,8 @@ import React from "react";
 
 import Reviews from './Reviews';
 import Bookmark from './Bookmark';
+import TourInfo from './TourInfo';
+import BookTourForm from './BookTourForm';
 
 import "../styles/TourOverview.css";
 
@@ -16,6 +18,8 @@ const TourOverview = () => {
       
     </div>
     <Bookmark/>
+    <TourInfo />
+    <BookTourForm />
     </>
   );
 };
