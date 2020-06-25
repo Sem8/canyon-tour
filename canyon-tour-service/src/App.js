@@ -35,6 +35,12 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   const classes = useStyles();
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
+
   return (
     <IonApp>
       <IonContent>        
