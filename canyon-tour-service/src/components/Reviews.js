@@ -16,14 +16,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-let getTopReview = () => {};
-
-let getTotalReviews = () => {};
-
-function getAllReviews() {
-
-}
-
 const Reviews = () => {
   const classes = useStyles();
 
@@ -51,8 +43,6 @@ const Reviews = () => {
 
     return () => unsubscribe();
   }, []);
-
-  // return allReviews;
 
   console.log("allReviews: ", allReviews);
 
